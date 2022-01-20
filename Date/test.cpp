@@ -7,9 +7,9 @@ using namespace std;
 
 int main()
 {
-	project::Date d{"12/01/2023"};
+	project::Date d{ "12/01/2023" };
 	project::Date d1{ "27/10/2019" };
-	
+
 	cout << project::Date::random_date() << '\n';
 
 	cout << "Gecen gun: " << (d - d1) << '\n';

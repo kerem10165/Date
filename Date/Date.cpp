@@ -158,7 +158,7 @@ project::Date& project::Date::operator++()
 project::Date project::Date::operator++(int)
 {
 	Date d{ *this };
-	d.operator_calculate(d.m_tm->tm_mday + 1);
+	operator_calculate(d.m_tm->tm_mday + 1);
 	return d;
 }
 
@@ -171,7 +171,7 @@ project::Date& project::Date::operator--()
 project::Date project::Date::operator--(int)
 {
 	Date d{ *this };
-	d.operator_calculate(d.m_tm->tm_mday - 1);
+	operator_calculate(d.m_tm->tm_mday - 1);
 	return d;
 }
 
